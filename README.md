@@ -1,8 +1,8 @@
 # NodeJS-CLI
-# Version-1.0.11
+# Version-1.0.12
 
 ## Description
-The tool will verify that the parameter is a well-formatted country name, transform it onto a two-letters country code,
+The tool will verify that the parameter is a well-formatted country name, transform it onto a two-letters country code. The tool will show the holidays of the  year for the given country.
 
 
 ## Install
