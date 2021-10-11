@@ -1,8 +1,12 @@
 {
   "name": "@yl2120/holidates",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "holidays": "./index.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +22,8 @@
   "homepage": "https://github.com/YL2120/NodeJS-CLI#readme",
   "dependencies": {
     "axios": "^0.22.0",
-    "country-list": "^2.2.0"
+    "chalk": "^4.1.2",
+    "country-list": "^2.2.0",
+    "ora": "^6.0.1"
   }
 }

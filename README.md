@@ -1,29 +1,24 @@
 # NodeJS-CLI
-# live-xxx
+# Version-1.0.6
 
-> ${DESCRIPTION}
+## Description
+The tool will verify that the parameter is a well-formatted country name, transform it onto a two-letters country code,
 
-[![NPM Version][npm-image]][npm-url]
-[![Linux Build][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
 
 ## Install
 
 ```bash
-npm i -S live-xxx
+npm install @yl2120/holidates
 ```
 
 ## Usage
 
-TODO
+```bash
+holidays "country's name" "year"
+```
+The second parameter is optionnal. If empty, the current year will be used.
 
 ## License
 
-[MIT](http://vjpr.mit-license.org)
+- [BeCode] (https://becode.org/fr/)
 
-[npm-image]: https://img.shields.io/npm/v/live-xxx.svg
-[npm-url]: https://npmjs.org/package/live-xxx
-[travis-image]: https://img.shields.io/travis/live-js/live-xxx/master.svg
-[travis-url]: https://travis-ci.org/live-js/live-xxx
-[coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
-[coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
