@@ -4,7 +4,7 @@ import ora from 'ora';
 import axios from 'axios';
 import * as country from "country-list";
 import chalk from "chalk";
-
+import figlet from "figlet";
 
 
 // const { getCode, getName } = require("country-list"); // gets the country list
@@ -32,14 +32,25 @@ if (country.getCode(countryname)) {
       
       const spinner = ora("Wait").start();
 
-      setTimeout(() => {
+      setTimeout(() => {  
         spinner.color = "blue";
         spinner.text = "It's loading";
       }, 1000);
-      const response = await axios.get(
+      
+      figlet('Holidays', function(err, data) { //funny typo
+        if (err) {
+            console.log('Something went wrong...');
+            console.dir(err);
+            return;
+        }
+        console.log(data)
+    });
+      
+    const response = await axios.get(
         `https://date.nager.at/api/v3/PublicHolidays/${Year}/${CountryCode}`
       );
       
+      console.log("\n");
       response.data.forEach((element) => {
         console.log(
           chalk.red(element.date) + " - " + chalk.blue(element.localName) + " - " + chalk.yellow(element.name)

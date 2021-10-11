@@ -1,5 +1,5 @@
 # NodeJS-CLI
-# Version-1.0.7
+# Version-1.0.11
 
 ## Description
 The tool will verify that the parameter is a well-formatted country name, transform it onto a two-letters country code,
